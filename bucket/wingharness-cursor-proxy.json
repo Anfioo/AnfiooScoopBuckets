@@ -4,7 +4,7 @@
     "homepage": "https://github.com/Anfioo/cursor-byok",
     "license": "MIT",
     "url": "https://github.com/Anfioo/cursor-byok/releases/download/scoop-v0.2.0/cursor-proxy-0.2.0.zip",
-    "hash": "9968f577e726922fe71a54c1a9d2af7efec35b75106c87a0858d59cb7792df4c",
+    "hash": "390806d43ed875864a65d4342dbf0c891b4967300046b00d5eda2da45be89cdf",
     "pre_install": [
         "New-Item -ItemType Directory -Force -Path $persist_dir | Out-Null",
         "New-Item -ItemType Directory -Force -Path (Join-Path $persist_dir 'data') | Out-Null"
