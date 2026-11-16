@@ -3,3 +3,8 @@
 ._*
 page.html
 checkver-*.html
+
+# Locally built plugin packages and their unpacked staging copies
+/.build/
+/dist/
+/.idea

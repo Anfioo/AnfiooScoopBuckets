@@ -1,0 +1,18 @@
+{
+    "##": "The zip is built from github.com/Anfioo/cursor-byok. Pushing a scoop-v<version> tag runs that repo's scoop-package workflow, which publishes the zip as a release asset and prints the version / url / hash to paste here. The file: URL below is the locally built zip; aria2 cannot download it, so install locally with aria2 disabled.",
+    "version": "0.1.0",
+    "description": "cursor-byok: routes Cursor's requests to your own model channels, with a built-in web console.",
+    "homepage": "https://github.com/Anfioo/cursor-byok",
+    "license": "MIT",
+    "url": "https://github.com/Anfioo/cursor-byok/releases/download/scoop-v0.1.0/cursor-proxy-0.1.0.zip",
+    "hash": "9968f577e726922fe71a54c1a9d2af7efec35b75106c87a0858d59cb7792df4c",
+    "pre_install": [
+        "New-Item -ItemType Directory -Force -Path $persist_dir | Out-Null",
+        "New-Item -ItemType Directory -Force -Path (Join-Path $persist_dir 'data') | Out-Null"
+    ],
+    "notes": [
+        "Settings and the SQLite database live in $persist_dir and survive scoop update.",
+        "Start it from WingHarness (Settings > Plugins) or run start.cmd in the install folder.",
+        "The first start writes .env with a random CURSOR_EXTERNAL_API_KEY."
+    ]
+}
