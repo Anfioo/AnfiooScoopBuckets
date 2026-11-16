@@ -1,10 +1,12 @@
 {
-    "##": "This file is a template. Fill the blanks and add or remove fields as necessary.",
+    "##": "This file is a template. Every manifest in this bucket is a WingHarness plugin, so save it as bucket/wingharness-<name>.json: the file name is the Scoop app name, and the wingharness- prefix is the only marker that tells the app this is one of its plugins. The description must start with 'WingHarness plugin: '. Structured metadata (minAppVersion, category) belongs in the plugin.json inside the zip, never here: Scoop's schema.json forbids unknown keys.",
     "version": "",
-    "description": "",
+    "description": "WingHarness plugin: ",
     "homepage": "",
     "license": "",
-    "notes": "",
+    "notes": [
+        "Installed from WingHarness (Settings > Plugins)."
+    ],
     "architecture": {
         "64bit": {
             "url": "",
