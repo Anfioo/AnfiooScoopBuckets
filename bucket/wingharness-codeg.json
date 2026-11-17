@@ -1,0 +1,42 @@
+{
+    "##": "Codeg is a plain app here, not a WingHarness plugin: its release ships no plugin.json, and with the wingharness- prefix the app would look for that file and refuse the install.",
+    "version": "0.45.0-wh04",
+    "description": "Collaborative multi-agent AI coding workspace that aggregates sessions from Claude Code, Codex, OpenCode and other agents.",
+    "homepage": "https://github.com/Anfioo/codeg",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Anfioo/codeg/releases/download/wh.04.0.45.0/whcodeg_0.45.0-wh04_x64-setup.exe",
+            "hash": "c44bd9e7e8c39c8f6e76840ccab1e3662aa164ed174f7501a1901c024259966f"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\$fname\" \"$dir\" -Removal",
+            "Remove-Item (Join-Path $dir '$PLUGINSDIR'), (Join-Path $dir 'uninstall.exe') -Recurse -Force -ErrorAction SilentlyContinue"
+        ]
+    },
+    "bin": [
+        [
+            "codeg.exe",
+            "codeg"
+        ],
+        "codeg-cli.exe",
+        "codeg-mcp.exe"
+    ],
+    "shortcuts": [
+        [
+            "codeg.exe",
+            "Codeg"
+        ]
+    ],
+    "notes": [
+        "The NSIS installer is unpacked, not run: Codeg and its web/ export land in the app folder, nothing is registered, and there is no uninstaller to keep.",
+        "Sessions, settings and the database live in %APPDATA%\\com.anfioo.wingharness\\codeg, which WingHarness's own Codeg page reads as well; scoop uninstall leaves that folder alone.",
+        "codeg-cli runs one prompt through the running app or a codeg-server; codeg-mcp is the MCP server."
+    ],
+    "checkver": {
+        "url": "https://github.com/Anfioo/codeg/releases/latest/download/latest.json",
+        "jsonpath": "$.version"
+    }
+}
