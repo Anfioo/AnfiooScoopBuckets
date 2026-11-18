@@ -1,10 +1,10 @@
 {
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "WingHarness plugin: cursor-byok routes Cursor's requests to your own model channels, with a built-in web console.",
     "homepage": "https://github.com/Anfioo/cursor-byok",
     "license": "MIT",
-    "url": "https://github.com/Anfioo/cursor-byok/releases/download/scoop-v0.2.0/cursor-proxy-0.2.0.zip",
-    "hash": "390806d43ed875864a65d4342dbf0c891b4967300046b00d5eda2da45be89cdf",
+    "url": "https://github.com/Anfioo/cursor-byok/releases/download/scoop-v0.2.1/cursor-proxy-0.2.1.zip",
+    "hash": "e3fc5ebfc8ebfda06ae01deec6ad5738a986fec8c0e31e89fe2247592e495cf6",
     "pre_install": [
         "New-Item -ItemType Directory -Force -Path $persist_dir | Out-Null",
         "New-Item -ItemType Directory -Force -Path (Join-Path $persist_dir 'data') | Out-Null"
