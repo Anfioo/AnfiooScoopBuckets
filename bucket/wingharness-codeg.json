@@ -1,13 +1,13 @@
 {
     "##": "Codeg is a plain app here, not a WingHarness plugin: its release ships no plugin.json, and with the wingharness- prefix the app would look for that file and refuse the install.",
-    "version": "0.45.0-wh04",
+    "version": "0.47.0-wh01",
     "description": "Collaborative multi-agent AI coding workspace that aggregates sessions from Claude Code, Codex, OpenCode and other agents.",
     "homepage": "https://github.com/Anfioo/codeg",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Anfioo/codeg/releases/download/wh.04.0.45.0/whcodeg_0.45.0-wh04_x64-setup.exe",
-            "hash": "c44bd9e7e8c39c8f6e76840ccab1e3662aa164ed174f7501a1901c024259966f"
+            "url": "https://github.com/Anfioo/codeg/releases/download/wh.01.0.47.0/whcodeg_0.47.0-wh01_x64-setup.exe",
+            "hash": "0c0de37ba5b23aa6f5c8cd70dd5331aad34c5dafb00c5808ab08ab0c2ce2aafd"
         }
     },
     "installer": {
