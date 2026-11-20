@@ -6,8 +6,8 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Anfioo/codeg/releases/download/wh.01.0.47.0/whcodeg_0.47.0-wh01_x64-setup.exe",
-            "hash": "0c0de37ba5b23aa6f5c8cd70dd5331aad34c5dafb00c5808ab08ab0c2ce2aafd"
+            "url": "https://github.com/Anfioo/codeg/releases/download/wh.02.0.47.0/whcodeg_0.47.0-wh02_x64-setup.exe",
+            "hash": "f19436936e3428a7a5c3b9b3260f97242ba86e5f79125b87adf97039dc84d93a"
         }
     },
     "installer": {
