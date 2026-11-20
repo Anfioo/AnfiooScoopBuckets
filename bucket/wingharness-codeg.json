@@ -1,6 +1,6 @@
 {
     "##": "Codeg is a plain app here, not a WingHarness plugin: its release ships no plugin.json, and with the wingharness- prefix the app would look for that file and refuse the install.",
-    "version": "0.47.0-wh01",
+    "version": "0.47.0-wh02",
     "description": "Collaborative multi-agent AI coding workspace that aggregates sessions from Claude Code, Codex, OpenCode and other agents.",
     "homepage": "https://github.com/Anfioo/codeg",
     "license": "Apache-2.0",
